@@ -63,7 +63,7 @@ def main(stdscr):
     start_screen(stdscr)
     while True:
         wpm_test(stdscr)
-        stdscr.addstr(2,0,"You have completed the test!Press any to continue")
+        stdscr.addstr(2,0,"You have completed the test! Press any to continue or Escape to quit")
         key = stdscr.getkey()
         if ord(key)==27:
             break
